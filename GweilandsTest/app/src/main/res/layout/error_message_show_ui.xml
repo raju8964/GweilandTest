@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:paddingHorizontal="@dimen/_50sdp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_margin="@dimen/_7sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appcolor"
+            android:paddingBottom="@dimen/_5sdp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="10"
+                    android:background="@color/appcolor"
+
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:padding="@dimen/_7sdp"
+                        android:background="@android:color/transparent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/_3sdp"
+                            android:id="@+id/msg_icon"
+                            />
+
+                        <TextView
+                            android:id="@+id/msg_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold"
+                            android:text="Whoops!"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@color/white"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_10sdp"
+
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/message"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/black"
+                            android:text="Operation could not completed \nAn Account with that email was \nnot found"/>
+
+                        <TextView
+                            android:id="@+id/error_msg_okey"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp"
+                            android:textAlignment="center"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:justificationMode="inter_word"
+                            android:text="Okay"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
